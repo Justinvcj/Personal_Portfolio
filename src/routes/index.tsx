@@ -210,16 +210,16 @@ function HeroDashboard({ ghData, lcData }: { ghData: any, lcData: any }) {
           
           <motion.div 
             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
-            className="md:col-span-8 md:row-span-2 glass-card border border-theme-border rounded-[2rem] p-8 md:p-12 bg-theme-card backdrop-blur-xl shadow-glass-extrusion flex flex-col justify-center relative overflow-hidden group hover:border-theme-cerulean/30 transition-colors duration-500"
+            className="md:col-span-8 md:row-span-2 glass-card border border-theme-border rounded-[2rem] p-6 sm:p-8 md:p-12 bg-theme-card backdrop-blur-xl shadow-glass-extrusion flex flex-col justify-center relative overflow-hidden group hover:border-theme-cerulean/30 transition-colors duration-500"
           >
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-theme-cerulean via-theme-mint to-theme-honey opacity-50 group-hover:opacity-100 transition-opacity"></div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-theme-card border border-theme-border text-xs text-theme-mint font-label-caps mb-6 uppercase tracking-widest w-max shadow-[0_0_15px_color-mix(in_srgb,var(--theme-mint)_20%,transparent)]">
               <span className="w-2 h-2 rounded-full bg-theme-mint animate-pulse"></span>
               Available for Hire
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-theme-text mb-4 tracking-tight">Justin Varghese</h1>
-            <h2 className="text-xl md:text-3xl text-theme-text-muted font-medium mb-8">System Architect & Software Developer</h2>
-            <p className="text-theme-text/70 leading-relaxed max-w-xl text-base md:text-lg">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-theme-text mb-4 tracking-tight">Justin Varghese</h1>
+            <h2 className="text-lg sm:text-xl md:text-3xl text-theme-text-muted font-medium mb-8">System Architect & Software Developer</h2>
+            <p className="text-theme-text/70 leading-relaxed max-w-xl text-sm sm:text-base md:text-lg">
               Computer Science student building real-time distributed systems, backend services, and AI-driven applications. Turning complex problems into scalable, production-ready software solutions.
             </p>
           </motion.div>
@@ -308,7 +308,7 @@ function TechStack() {
           <h2 className="text-3xl md:text-4xl font-bold text-theme-text">Technical Ecosystem</h2>
         </FadeUp>
         
-        <div className="relative w-full max-w-4xl mx-auto h-[600px] flex items-center justify-center scale-75 md:scale-100 mt-10 md:mt-0">
+        <div className="relative w-full max-w-4xl mx-auto h-[400px] md:h-[600px] flex items-center justify-center scale-[0.55] sm:scale-75 md:scale-100 mt-10 md:mt-0">
           {/* Core Center */}
           <div className="absolute z-30 w-24 h-24 rounded-full border border-theme-crimson bg-theme-bg flex items-center justify-center shadow-[0_0_30px_color-mix(in_srgb,var(--theme-crimson)_40%,transparent)]">
             <span className="font-bold text-theme-crimson tracking-widest text-sm font-label-caps uppercase">Core</span>
