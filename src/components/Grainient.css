@@ -31,8 +31,7 @@
   height: 150vw;
   max-width: 1200px;
   max-height: 1200px;
-  background: radial-gradient(circle, var(--color2) 0%, var(--color3) 40%, var(--color1) 80%);
-  filter: blur(80px);
+  background: radial-gradient(circle at center, var(--color2) 0%, var(--color3) 40%, var(--color1) 80%);
   opacity: 0.6;
   animation: slow-spin 25s linear infinite;
   pointer-events: none;

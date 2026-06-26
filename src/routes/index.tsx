@@ -99,7 +99,7 @@ function Navigation() {
   }, [scrollY]);
 
   return (
-    <motion.nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-theme-bg/80 backdrop-blur-xl border-b border-theme-border' : 'bg-transparent border-transparent'}`}>
+    <motion.nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-theme-bg/80 backdrop-blur-md border-b border-theme-border' : 'bg-transparent border-transparent'}`}>
       <div className="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
         <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className="font-bold text-headline-sm tracking-tighter text-theme-text flex items-center gap-2">
           <div className="w-8 h-8 rounded-full bg-theme-accent-1 text-deep-navy flex items-center justify-center text-xs">JV</div>
@@ -132,7 +132,7 @@ function GitHubWidget({ ghData }: { ghData: any }) {
   const commitsCount = "340";
   
   return (
-    <motion.div whileHover={{ y: -5, scale: 1.02 }} className="glass-card p-6 rounded-2xl border border-theme-border h-full flex flex-col justify-between hover:border-theme-mint/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--theme-mint)_20%,transparent)] transition-all bg-theme-card backdrop-blur-2xl shadow-glass-extrusion relative overflow-hidden group">
+    <motion.div whileHover={{ y: -5, scale: 1.02 }} className="glass-card p-6 rounded-2xl border border-theme-border h-full flex flex-col justify-between hover:border-theme-mint/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--theme-mint)_20%,transparent)] transition-all bg-theme-card backdrop-blur-md shadow-glass-extrusion relative overflow-hidden group">
       <div className="absolute top-0 right-0 p-4 opacity-10 pointer-events-none group-hover:text-theme-mint transition-colors">
         <span className="material-symbols-outlined text-8xl">terminal</span>
       </div>
@@ -166,7 +166,7 @@ function LeetCodeWidget({ lcData }: { lcData: any }) {
   const hard = lcData?.hardSolved || 0;
 
   return (
-    <motion.div whileHover={{ y: -5, scale: 1.02 }} className="glass-card p-6 rounded-2xl border border-theme-border h-full flex flex-col justify-between hover:border-theme-honey/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--theme-honey)_20%,transparent)] transition-all bg-theme-card backdrop-blur-2xl shadow-glass-extrusion relative overflow-hidden group">
+    <motion.div whileHover={{ y: -5, scale: 1.02 }} className="glass-card p-6 rounded-2xl border border-theme-border h-full flex flex-col justify-between hover:border-theme-honey/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--theme-honey)_20%,transparent)] transition-all bg-theme-card backdrop-blur-md shadow-glass-extrusion relative overflow-hidden group">
       <div className="absolute -right-5 -bottom-5 text-[150px] text-theme-honey/5 group-hover:text-theme-honey/10 transition-colors material-symbols-outlined pointer-events-none">code_blocks</div>
       <div>
         <div className="flex items-center gap-2 mb-4 text-theme-text-muted">
@@ -210,7 +210,7 @@ function HeroDashboard({ ghData, lcData }: { ghData: any, lcData: any }) {
           
           <motion.div 
             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
-            className="md:col-span-8 md:row-span-2 glass-card border border-theme-border rounded-[2rem] p-6 sm:p-8 md:p-12 bg-theme-card backdrop-blur-xl shadow-glass-extrusion flex flex-col justify-center relative overflow-hidden group hover:border-theme-cerulean/30 transition-colors duration-500"
+            className="md:col-span-8 md:row-span-2 glass-card border border-theme-border rounded-[2rem] p-6 sm:p-8 md:p-12 bg-theme-card backdrop-blur-md shadow-glass-extrusion flex flex-col justify-center relative overflow-hidden group hover:border-theme-cerulean/30 transition-colors duration-500"
           >
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-theme-cerulean via-theme-mint to-theme-honey opacity-50 group-hover:opacity-100 transition-opacity"></div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-theme-card border border-theme-border text-xs text-theme-mint font-label-caps mb-6 uppercase tracking-widest w-max shadow-[0_0_15px_color-mix(in_srgb,var(--theme-mint)_20%,transparent)]">
@@ -234,7 +234,7 @@ function HeroDashboard({ ghData, lcData }: { ghData: any, lcData: any }) {
 
             <motion.div 
               initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
-              className="glass-card border border-theme-border rounded-[2rem] p-6 lg:p-8 bg-theme-card backdrop-blur-xl shadow-glass-extrusion flex flex-col items-center justify-center hover:border-theme-crimson/30 transition-colors flex-[1]"
+              className="glass-card border border-theme-border rounded-[2rem] p-6 lg:p-8 bg-theme-card backdrop-blur-md shadow-glass-extrusion flex flex-col items-center justify-center hover:border-theme-crimson/30 transition-colors flex-[1]"
             >
                <div className="flex flex-col items-center justify-center gap-6 w-full h-full">
                 <a href="mailto:justinvcj@gmail.com" className="w-full">
@@ -426,7 +426,7 @@ function Projects() {
                   }
                 }}
                 whileHover={{ scale: 1.02 }}
-                className="group glass-card rounded-3xl border border-theme-border bg-theme-card backdrop-blur-xl shadow-glass-extrusion p-8 md:p-10 hover:border-theme-honey/40 hover:bg-theme-card/80 transition-all duration-500 h-full flex flex-col cursor-pointer relative z-10"
+                className="group glass-card rounded-3xl border border-theme-border bg-theme-card backdrop-blur-md shadow-glass-extrusion p-8 md:p-10 hover:border-theme-honey/40 hover:bg-theme-card/80 transition-all duration-500 h-full flex flex-col cursor-pointer relative z-10"
               >
                 <div className="flex justify-between items-start mb-6">
                   <motion.div layoutId={`icon-${p.id}`} className="w-14 h-14 rounded-2xl bg-surface-container-low flex items-center justify-center border border-theme-border group-hover:bg-theme-honey group-hover:border-theme-honey group-hover:text-theme-bg transition-colors duration-300">
@@ -472,7 +472,7 @@ function Projects() {
                     <motion.div
                       layoutId={`project-${p.id}`}
                       key={p.id}
-                      className="glass-card rounded-[2rem] border border-theme-border bg-theme-bg/90 backdrop-blur-2xl shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_24px_64px_rgba(0,0,0,0.8)] p-8 md:p-12 w-full max-w-5xl max-h-[90vh] overflow-y-auto pointer-events-auto relative flex flex-col"
+                      className="glass-card rounded-[2rem] border border-theme-border bg-theme-bg/90 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_24px_64px_rgba(0,0,0,0.8)] p-8 md:p-12 w-full max-w-5xl max-h-[90vh] overflow-y-auto pointer-events-auto relative flex flex-col"
                     >
                       <button 
                         onClick={() => setSelectedId(null)}
@@ -547,7 +547,7 @@ function Process() {
           
           {steps.map((s, i) => (
             <FadeUp delay={i * 0.15} key={i} className="relative z-10">
-              <div className="relative group p-6 rounded-2xl bg-theme-card backdrop-blur-xl shadow-glass-extrusion border border-theme-border hover:border-theme-border hover:bg-theme-card/80 transition-all h-full">
+              <div className="relative group p-6 rounded-2xl bg-theme-card backdrop-blur-md shadow-glass-extrusion border border-theme-border hover:border-theme-border hover:bg-theme-card/80 transition-all h-full">
                 <div className="font-display-hero text-6xl md:text-7xl text-theme-text/5 absolute -top-8 -right-4 group-hover:text-theme-text group-hover:-translate-y-1 transition-all duration-500 pointer-events-none z-20">{s.num}</div>
                 <h4 className="text-lg font-bold text-theme-text mb-3 relative z-10 mt-4">{s.title}</h4>
                 <p className="text-theme-text-muted text-sm leading-relaxed relative z-10">{s.desc}</p>
@@ -686,7 +686,7 @@ function Footer() {
         
         <section aria-label="Terminal" className="max-w-3xl mx-auto mb-20 focus-within:ring-2 focus-within:ring-theme-cerulean rounded-2xl transition-shadow">
           <FadeUp>
-            <div className="glass-card rounded-2xl border border-theme-border bg-theme-bg/80 backdrop-blur-xl overflow-hidden shadow-glass-extrusion">
+            <div className="glass-card rounded-2xl border border-theme-border bg-theme-bg/80 backdrop-blur-md overflow-hidden shadow-glass-extrusion">
               <div className="flex items-center gap-2 px-4 py-3 border-b border-theme-border bg-theme-card">
                 <div className="w-3 h-3 rounded-full bg-theme-crimson"></div>
                 <div className="w-3 h-3 rounded-full bg-theme-honey"></div>
