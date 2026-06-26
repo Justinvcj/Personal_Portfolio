@@ -1,0 +1,214 @@
+@import "tailwindcss" source(none);
+@source "../src";
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  :root {
+    /* 4-Color Palette Architecture */
+    --theme-bg: oklch(0.12 0.01 260);
+    --theme-text: #FFFFFF;
+    --theme-text-muted: rgba(255, 255, 255, 0.6);
+    
+    --theme-honey: oklch(0.65 0.15 60);
+    --theme-cerulean: oklch(0.65 0.12 240);
+    --theme-crimson: oklch(0.60 0.15 15);
+    --theme-mint: oklch(0.70 0.10 160);
+    
+    --theme-accent-1: var(--theme-honey);
+    --theme-accent-2: var(--theme-mint);
+    --theme-accent-3: var(--theme-cerulean);
+    
+    --theme-card: rgba(255, 255, 255, 0.05);
+    --theme-border: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@theme inline {
+  --color-theme-bg: var(--theme-bg);
+  --color-theme-text: var(--theme-text);
+  --color-theme-text-muted: var(--theme-text-muted);
+  
+  --color-theme-honey: var(--theme-honey);
+  --color-theme-cerulean: var(--theme-cerulean);
+  --color-theme-crimson: var(--theme-crimson);
+  --color-theme-mint: var(--theme-mint);
+
+  --color-theme-accent-1: var(--theme-accent-1);
+  --color-theme-accent-2: var(--theme-accent-2);
+  --color-theme-accent-3: var(--theme-accent-3);
+  --color-theme-accent: var(--theme-accent-1);
+  --color-theme-card: var(--theme-card);
+  --color-theme-border: var(--theme-border);
+  --color-primary-fixed-dim: #b6c4ff;
+  --color-on-error-container: #93000a;
+  --color-outline-variant: #c3c5d8;
+  --color-inverse-surface: #2e3039;
+  --color-primary-container: #2d65ff;
+  --color-background: #020305;
+  --color-surface-container-highest: rgba(255, 255, 255, 0.1);
+  --color-tertiary: #575b60;
+  --color-on-tertiary: #ffffff;
+  --color-on-secondary-container: #58627c;
+  --color-on-background: #ffffff;
+  --color-on-secondary-fixed-variant: #c3c5d8;
+  --color-secondary-fixed: #d9e2ff;
+  --color-on-primary-fixed-variant: #003ab1;
+  --color-surface-variant: rgba(255, 255, 255, 0.05);
+  --color-tertiary-fixed: #e0e2e9;
+  --color-on-surface-variant: #8a95b3;
+  --color-outline: #434D6B;
+  --color-on-tertiary-fixed-variant: #44474c;
+  --color-secondary-fixed-dim: #bcc6e4;
+  --color-surface-container-low: rgba(255, 255, 255, 0.03);
+  --color-secondary-container: #d5dffe;
+  --color-inverse-on-surface: #f0f0fd;
+  --color-slate-dark: #1F3942;
+  --color-tertiary-container: #707379;
+  --color-accent-purple: #8A3FFC;
+  --color-surface-tint: #004ee7;
+  --color-tertiary-fixed-dim: #c4c6cd;
+  --color-on-error: #ffffff;
+  --color-surface-container-high: rgba(255, 255, 255, 0.08);
+  --color-surface: #020305;
+  --color-surface-container-lowest: #010203;
+  --color-deep-navy: #01091F;
+  --color-electric-blue: #2D65FF;
+  --color-error: #ba1a1a;
+  --color-on-primary: #ffffff;
+  --color-on-tertiary-fixed: #181c21;
+  --color-secondary: #545e78;
+  --color-primary-fixed: #dce1ff;
+  --color-error-container: #ffdad6;
+  --color-surface-dim: #d9d9e6;
+  --color-on-primary-container: #fbf9ff;
+  --color-primary: #004bde;
+  --color-on-secondary-fixed: #111b31;
+  --color-on-primary-fixed: #001550;
+  --color-on-secondary: #ffffff;
+  --color-inverse-primary: #b6c4ff;
+  --color-on-surface: #ffffff;
+  --color-surface-bright: rgba(255, 255, 255, 0.12);
+  --color-ghost-white: #030712;
+  --color-on-tertiary-container: #f9faff;
+  --color-surface-container: rgba(255, 255, 255, 0.05);
+
+  --radius-DEFAULT: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  --spacing-section-gap: 120px;
+  --spacing-gutter: 24px;
+  --spacing-element-gap: 24px;
+  --spacing-container-max: 1280px;
+  --spacing-margin-mobile: 20px;
+
+  --font-label-caps: "Inter", sans-serif;
+  --font-headline-sm: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-display-hero: "Inter", sans-serif;
+  --font-headline-md: "Inter", sans-serif;
+  --font-headline-lg-mobile: "Inter", sans-serif;
+  --font-headline-lg: "Inter", sans-serif;
+
+  --text-label-caps: 12px;
+  --text-label-caps--line-height: 1.2;
+  --text-label-caps--letter-spacing: 0.05em;
+  --text-label-caps--font-weight: 600;
+
+  --text-headline-sm: 24px;
+  --text-headline-sm--line-height: 1.4;
+  --text-headline-sm--font-weight: 600;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--font-weight: 400;
+
+  --text-display-hero: 72px;
+  --text-display-hero--line-height: 1.1;
+  --text-display-hero--letter-spacing: -0.03em;
+  --text-display-hero--font-weight: 700;
+
+  --text-headline-md: 32px;
+  --text-headline-md--line-height: 1.3;
+  --text-headline-md--font-weight: 600;
+
+  --text-headline-lg-mobile: 32px;
+  --text-headline-lg-mobile--line-height: 1.2;
+  --text-headline-lg-mobile--font-weight: 700;
+
+  --text-headline-lg: 48px;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-lg--letter-spacing: -0.02em;
+  --text-headline-lg--font-weight: 700;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .shadow-glass-extrusion {
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 8px 32px rgba(0,0,0,0.5);
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .logo-scroll-track {
+    display: flex;
+    width: calc(250px * 12);
+    animation: scroll 30s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 6)); }
+  }
+
+  .cta-glow:hover {
+    box-shadow: 0 0 20px rgba(45, 101, 255, 0.4);
+    transform: scale(1.02);
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .accordion-item.active .accordion-content {
+    max-height: 200px;
+  }
+
+  .accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+  }
+}
