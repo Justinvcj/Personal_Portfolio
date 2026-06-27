@@ -1,6 +1,6 @@
-import { useRef, type ButtonHTMLAttributes, type ReactNode } from "react";
+import { useRef, type AnchorHTMLAttributes, type ReactNode } from "react";
 
-interface Props extends ButtonHTMLAttributes<HTMLAnchorElement> {
+interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: ReactNode;
   href?: string;
   variant?: "primary" | "ghost";

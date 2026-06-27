@@ -1,7 +1,7 @@
 import { o as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { n as motion, r as AnimatePresence, t as useScroll } from "../_libs/framer-motion.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-CwYnpype.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-n6jXiFzO.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Preloader({ isLoaded }) {
@@ -128,7 +128,7 @@ var Grainient = ({ color1 = "#171723", color2 = "#3b82f6", color3 = "#ef4444", c
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "grainient-blob" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "grainient-noise" })]
 	});
 };
-function MagneticButton({ children, className, onClick }) {
+function MagneticButton({ children, className, onClick, href, target, rel, "aria-label": ariaLabel, ...rest }) {
 	const ref = (0, import_react.useRef)(null);
 	const [position, setPosition] = (0, import_react.useState)({
 		x: 0,
@@ -148,7 +148,7 @@ function MagneticButton({ children, className, onClick }) {
 		x: 0,
 		y: 0
 	});
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.button, {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(href ? motion.a : motion.button, {
 		ref,
 		onMouseMove: handleMouse,
 		onMouseLeave: reset,
@@ -164,6 +164,11 @@ function MagneticButton({ children, className, onClick }) {
 		},
 		className,
 		onClick,
+		href,
+		target,
+		rel,
+		"aria-label": ariaLabel,
+		...rest,
 		children
 	});
 }
@@ -257,15 +262,13 @@ function Navigation() {
 						x: 0
 					},
 					transition: { duration: .6 },
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MagneticButton, {
 						href: "/resume.pdf",
 						target: "_blank",
 						rel: "noreferrer",
 						"aria-label": "Open Resume",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MagneticButton, {
-							className: "bg-theme-card/80 border border-theme-border text-theme-text px-5 py-2 rounded-full font-label-caps text-xs hover:bg-white hover:text-deep-navy transition-colors",
-							children: "Resume"
-						})
+						className: "bg-theme-card/80 border border-theme-border text-theme-text px-5 py-2 rounded-full font-label-caps text-xs hover:bg-white hover:text-deep-navy transition-colors",
+						children: "Resume"
 					})
 				})
 			]
@@ -489,16 +492,13 @@ function HeroDashboard({ ghData, lcData }) {
 							className: "glass-card border border-theme-border rounded-[2rem] p-6 lg:p-8 bg-theme-card backdrop-blur-md shadow-glass-extrusion flex flex-col items-center justify-center hover:border-theme-crimson/30 transition-colors flex-[1]",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex flex-col items-center justify-center gap-6 w-full h-full",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(MagneticButton, {
 									href: "mailto:justinvcj@gmail.com",
-									className: "w-full",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(MagneticButton, {
-										className: "w-full bg-theme-text text-theme-bg px-8 py-4 rounded-full font-label-caps text-sm hover:bg-theme-crimson hover:text-white shadow-[0_0_20px_color-mix(in_srgb,var(--theme-crimson)_30%,transparent)] transition-all flex items-center justify-center gap-2",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "material-symbols-outlined text-sm",
-											children: "mail"
-										}), " Contact"]
-									})
+									className: "w-full bg-theme-text text-theme-bg px-8 py-4 rounded-full font-label-caps text-sm hover:bg-theme-crimson hover:text-white shadow-[0_0_20px_color-mix(in_srgb,var(--theme-crimson)_30%,transparent)] transition-all flex items-center justify-center gap-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "material-symbols-outlined text-sm",
+										children: "mail"
+									}), " Contact"]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "flex gap-4 justify-center w-full",
 									children: [
@@ -886,18 +886,15 @@ function Projects() {
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "mt-10 pt-8 border-t border-theme-border",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(MagneticButton, {
 											href: p.githubUrl,
 											target: "_blank",
 											rel: "noreferrer",
-											className: "block w-full",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(MagneticButton, {
-												className: "w-full bg-white text-deep-navy px-6 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-theme-cerulean hover:text-white transition-all",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "material-symbols-outlined text-xl",
-													children: "github"
-												}), "View Source"]
-											})
+											className: "w-full bg-white text-deep-navy px-6 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-theme-cerulean hover:text-white transition-all",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "material-symbols-outlined text-xl",
+												children: "github"
+											}), "View Source"]
 										})
 									})
 								]

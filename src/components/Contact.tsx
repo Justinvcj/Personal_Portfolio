@@ -24,10 +24,10 @@ export function Contact() {
               <MagneticButton href="mailto:inquiry@justin.design" variant="primary">
                 Start a Conversation
               </MagneticButton>
-              <MagneticButton href="https://linkedin.com" variant="ghost">
+              <MagneticButton href="https://linkedin.com" variant="ghost" target="_blank" rel="noreferrer">
                 LinkedIn
               </MagneticButton>
-              <MagneticButton href="https://github.com" variant="ghost">
+              <MagneticButton href="https://github.com" variant="ghost" target="_blank" rel="noreferrer">
                 GitHub
               </MagneticButton>
             </div>

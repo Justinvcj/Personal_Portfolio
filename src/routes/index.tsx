@@ -11,11 +11,11 @@ export const Route = createFileRoute("/")({
 
 // --- UTILITIES ---
 
-function MagneticButton({ children, className, onClick }: { children: React.ReactNode, className?: string, onClick?: () => void }) {
-  const ref = useRef<HTMLButtonElement>(null);
+function MagneticButton({ children, className, onClick, href, target, rel, 'aria-label': ariaLabel, ...rest }: any) {
+  const ref = useRef<any>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  const handleMouse = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleMouse = (e: React.MouseEvent<any>) => {
     const { clientX, clientY } = e;
     const { height, width, left, top } = ref.current!.getBoundingClientRect();
     const middleX = clientX - (left + width / 2);
@@ -25,8 +25,10 @@ function MagneticButton({ children, className, onClick }: { children: React.Reac
 
   const reset = () => setPosition({ x: 0, y: 0 });
 
+  const MotionComponent = href ? motion.a : motion.button;
+
   return (
-    <motion.button
+    <MotionComponent
       ref={ref}
       onMouseMove={handleMouse}
       onMouseLeave={reset}
@@ -34,9 +36,14 @@ function MagneticButton({ children, className, onClick }: { children: React.Reac
       transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
       className={className}
       onClick={onClick}
+      href={href}
+      target={target}
+      rel={rel}
+      aria-label={ariaLabel}
+      {...rest}
     >
       {children}
-    </motion.button>
+    </MotionComponent>
   );
 }
 
@@ -113,11 +120,9 @@ function Navigation() {
           ))}
         </div>
         <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
-          <a href="/resume.pdf" target="_blank" rel="noreferrer" aria-label="Open Resume">
-            <MagneticButton className="bg-theme-card/80 border border-theme-border text-theme-text px-5 py-2 rounded-full font-label-caps text-xs hover:bg-white hover:text-deep-navy transition-colors">
-              Resume
-            </MagneticButton>
-          </a>
+          <MagneticButton href="/resume.pdf" target="_blank" rel="noreferrer" aria-label="Open Resume" className="bg-theme-card/80 border border-theme-border text-theme-text px-5 py-2 rounded-full font-label-caps text-xs hover:bg-white hover:text-deep-navy transition-colors">
+            Resume
+          </MagneticButton>
         </motion.div>
       </div>
     </motion.nav>
@@ -237,11 +242,9 @@ function HeroDashboard({ ghData, lcData }: { ghData: any, lcData: any }) {
               className="glass-card border border-theme-border rounded-[2rem] p-6 lg:p-8 bg-theme-card backdrop-blur-md shadow-glass-extrusion flex flex-col items-center justify-center hover:border-theme-crimson/30 transition-colors flex-[1]"
             >
                <div className="flex flex-col items-center justify-center gap-6 w-full h-full">
-                <a href="mailto:justinvcj@gmail.com" className="w-full">
-                  <MagneticButton className="w-full bg-theme-text text-theme-bg px-8 py-4 rounded-full font-label-caps text-sm hover:bg-theme-crimson hover:text-white shadow-[0_0_20px_color-mix(in_srgb,var(--theme-crimson)_30%,transparent)] transition-all flex items-center justify-center gap-2">
-                    <span className="material-symbols-outlined text-sm">mail</span> Contact
-                  </MagneticButton>
-                </a>
+                <MagneticButton href="mailto:justinvcj@gmail.com" className="w-full bg-theme-text text-theme-bg px-8 py-4 rounded-full font-label-caps text-sm hover:bg-theme-crimson hover:text-white shadow-[0_0_20px_color-mix(in_srgb,var(--theme-crimson)_30%,transparent)] transition-all flex items-center justify-center gap-2">
+                  <span className="material-symbols-outlined text-sm">mail</span> Contact
+                </MagneticButton>
                 <div className="flex gap-4 justify-center w-full">
                   {[
                     { icon: "code", link: "github.com/Justinvcj" },
@@ -505,12 +508,10 @@ function Projects() {
                             ))}
                           </div>
                           <div className="mt-10 pt-8 border-t border-theme-border">
-                            <a href={p.githubUrl} target="_blank" rel="noreferrer" className="block w-full">
-                              <MagneticButton className="w-full bg-white text-deep-navy px-6 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-theme-cerulean hover:text-white transition-all">
+                              <MagneticButton href={p.githubUrl} target="_blank" rel="noreferrer" className="w-full bg-white text-deep-navy px-6 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-theme-cerulean hover:text-white transition-all">
                                 <span className="material-symbols-outlined text-xl">github</span>
                                 View Source
                               </MagneticButton>
-                            </a>
                           </div>
                         </div>
                       </div>
