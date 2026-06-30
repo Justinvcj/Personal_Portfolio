@@ -626,7 +626,7 @@ function Experience() {
               <FadeUp delay={0.2}>
                 <div className="relative pl-8 border-l border-theme-border">
                   <div className="absolute w-4 h-4 rounded-full bg-emerald-500 -left-[8.5px] top-1 shadow-[0_0_10px_rgba(16,185,129,0.8)]"></div>
-                  <div className="text-sm text-emerald-500 font-bold mb-1">Expected May 2026</div>
+                  <div className="text-sm text-emerald-500 font-bold mb-1">Expected March 2027</div>
                   <h3 className="text-xl font-bold text-theme-text mb-1">B.E. Computer Science and Engineering</h3>
                   <h4 className="text-theme-text-muted text-sm mb-2">Dr. N.G.P Institute of Technology</h4>
                   <div className="inline-block px-3 py-1 rounded bg-theme-card text-theme-text/80 text-xs font-bold border border-theme-border">CGPA: 8.6</div>
