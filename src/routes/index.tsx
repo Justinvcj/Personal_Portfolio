@@ -183,10 +183,10 @@ function GitHubWidget({ ghData }: { ghData: any }) {
 }
 
 function LeetCodeWidget({ lcData }: { lcData: any }) {
-  const totalSolved = lcData?.solvedProblem || 0;
-  const easy = lcData?.easySolved || 0;
-  const medium = lcData?.mediumSolved || 0;
-  const hard = lcData?.hardSolved || 0;
+  const totalSolved = lcData?.solvedProblem || 167;
+  const easy = lcData?.easySolved || 80;
+  const medium = lcData?.mediumSolved || 70;
+  const hard = lcData?.hardSolved || 17;
 
   return (
     <motion.div whileHover={{ y: -5, scale: 1.02 }} className="glass-card p-6 rounded-2xl border border-theme-border h-full flex flex-col justify-between hover:border-theme-honey/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--theme-honey)_20%,transparent)] transition-all bg-theme-card backdrop-blur-md shadow-glass-extrusion relative overflow-hidden group">
