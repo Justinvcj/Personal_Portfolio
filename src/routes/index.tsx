@@ -391,9 +391,9 @@ function Projects() {
       title: "Equinox",
       tag: "Ride-Hailing Ecosystem",
       tech: ["Node.js", "WebSockets", "Supabase", "Flutter", "OSRM"],
-      desc: "Event-driven backend utilizing Node.js and WebSockets for instantaneous, bidirectional communication. Integrated OSRM routing engine to bypass paid API dependencies and developed a dynamic fare calculation engine.",
+      desc: "Built to eliminate exorbitant API costs in ride-hailing by implementing a custom open-source routing engine. It solves the challenge of real-time location synchronization between drivers and riders with zero-latency dispatching.",
       icon: "local_taxi",
-      fullDesc: "Equinox is a fully functional ride-hailing ecosystem built to demonstrate extreme scalability. The backend uses Node.js with WebSockets for real-time location streaming and dispatching. By integrating the open-source OSRM routing engine, it calculates complex ETAs and fares entirely independently of paid APIs. The driver and rider clients were built in Flutter for a unified cross-platform experience.",
+      fullDesc: "Traditional ride-hailing platforms suffer from high operational costs due to third-party mapping APIs and struggle with real-time state synchronization. Equinox solves this by bringing routing in-house with a custom routing integration, completely bypassing paid APIs for ETAs and fare calculations. It also tackles the latency problem by maintaining a persistent, bidirectional connection between drivers and riders, ensuring instant dispatching and live location tracking without dropping connections.",
       githubUrl: "https://github.com/Justinvcj/Equinox-EcoSystem"
     },
     {
@@ -401,9 +401,9 @@ function Projects() {
       title: "Developer Knowledge Engine",
       tag: "AI & Data Pipeline",
       tech: ["Python", "LLMs", "NetworkX", "SQLite", "GitHub API"],
-      desc: "Engineered an ETL pipeline to scrape and standardize documentation. Leveraged OpenAI LLMs to extract technical entities and built an interactive, localized knowledge graph using NetworkX.",
+      desc: "Solves the problem of fragmented and linear developer documentation. It transforms scattered text files and web pages into a visual, interconnected web of concepts, making it effortless to discover relationships between APIs.",
       icon: "account_tree",
-      fullDesc: "This knowledge engine operates by scraping disparate developer documentation sources, structuring the data via an ETL pipeline in Python, and passing it through an LLM to extract semantic technical entities (APIs, paradigms, libraries). These nodes are then mapped into a localized graph database using NetworkX and SQLite, allowing developers to query relationship webs rather than linear text.",
+      fullDesc: "Developers waste countless hours reading through disconnected, linear documentation pages trying to understand how different systems interact. The Developer Knowledge Engine solves this information overload by reading vast amounts of documentation and extracting the core technical entities. It connects the dots automatically, presenting the user with an interactive visual map. Instead of searching for keywords, developers can visually explore how libraries, APIs, and concepts relate to one another in an intuitive graph.",
       githubUrl: "https://github.com/Justinvcj/Developer-Knowledge-Engine"
     },
     {
@@ -411,9 +411,9 @@ function Projects() {
       title: "RepoRoast",
       tag: "AI Code Review System",
       tech: ["React", "Node.js", "TypeScript", "Gemini API"],
-      desc: "Full-stack code analysis platform utilizing React and Node.js. Integrated the Gemini API as an automated code reviewer with a sophisticated multi-file parsing system and token optimization.",
+      desc: "Automates the tedious and error-prone manual code review process. It instantly analyzes entire repositories to uncover hidden anti-patterns, security flaws, and performance bottlenecks before they reach production.",
       icon: "bug_report",
-      fullDesc: "RepoRoast parses GitHub repositories through the GitHub API, intelligently chunks and optimizes the AST payload, and streams it to the Gemini API for deep-context code review. It identifies anti-patterns, security flaws, and performance bottlenecks, presenting the findings in a highly interactive, split-pane React dashboard.",
+      fullDesc: "Manual code reviews are notoriously slow, subjective, and prone to human error, often allowing subtle security vulnerabilities or performance bottlenecks to slip into production codebases. RepoRoast solves this by acting as an instant, tireless senior engineer. It intelligently reads through entire GitHub repositories, understanding the full context of the codebase, and provides immediate, actionable feedback on bad practices and bugs, drastically reducing code review bottlenecks for development teams.",
       githubUrl: "https://github.com/Justinvcj/RepooRoast"
     },
     {
@@ -421,9 +421,9 @@ function Projects() {
       title: "Intent Pay",
       tag: "Expense Management App",
       tech: ["Kotlin", "Jetpack Compose", "Room DB"],
-      desc: "Native offline Android app that interprets incoming bank SMS alerts via Broadcast Receivers. Implemented a local rule-based classification engine and a unique 'Reflection' overlay to prevent impulse spending.",
+      desc: "Tackles financial anxiety and impulse spending by acting as a psychological barrier. It automatically tracks expenses without manual entry and forces a 'cooldown' period before opening payment apps to encourage mindful spending.",
       icon: "account_balance_wallet",
-      fullDesc: "Intent Pay solves the problem of manual expense tracking by automatically reading bank SMS alerts using Android Broadcast Receivers. Built fully natively with Kotlin and Jetpack Compose, it features a unique psychological 'Reflection' overlay that triggers before registered payment apps are launched, forcing a 5-second cooldown to reduce impulse spending.",
+      fullDesc: "Managing personal finances usually fails because manual expense tracking is tedious, and digital payment apps make it too easy to spend money impulsively. Intent Pay solves both problems simultaneously. It removes the friction of tracking by automatically recording expenses from bank SMS alerts in the background. More importantly, it tackles the psychology of impulse buying by intercepting attempts to open payment apps and forcing a 'Reflection' cooldown period, giving the user a moment to reconsider unnecessary purchases.",
       githubUrl: "https://github.com/Justinvcj/Intent_Pay"
     }
   ];
