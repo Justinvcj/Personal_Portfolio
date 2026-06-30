@@ -604,13 +604,14 @@ function Experience() {
             <FadeUp delay={0.1}>
               <div className="relative pl-8 border-l border-theme-border">
                 <div className="absolute w-4 h-4 rounded-full bg-theme-accent-1 -left-[8.5px] top-1 shadow-[0_0_10px_color-mix(in_srgb,var(--theme-accent-1)_80%,transparent)]"></div>
-                <div className="text-sm text-theme-accent-1 font-bold mb-1">June 2025</div>
+                <div className="text-sm text-theme-accent-1 font-bold mb-1">June 2025 &ndash; July 2025</div>
                 <h3 className="text-xl font-bold text-theme-text mb-1">Software Development Intern</h3>
                 <h4 className="text-theme-text-muted text-sm mb-4">Nxtlogic Software Solutions, Coimbatore</h4>
                 <ul className="space-y-3 text-theme-text-muted text-sm">
-                  <li className="flex gap-3"><span className="material-symbols-outlined text-theme-accent-2 text-[16px]">chevron_right</span> Assisted in integration of scalable RESTful backend APIs, improving data retrieval efficiency.</li>
-                  <li className="flex gap-3"><span className="material-symbols-outlined text-theme-accent-2 text-[16px]">chevron_right</span> Collaborated on real-world workflows including requirement analysis, debugging, and testing.</li>
-                  <li className="flex gap-3"><span className="material-symbols-outlined text-theme-accent-2 text-[16px]">chevron_right</span> Applied best practices including modular code design and Git version control.</li>
+                  <li className="flex gap-3"><span className="material-symbols-outlined text-theme-accent-2 text-[16px]">chevron_right</span> Developed CampusHub, a full-stack campus management application using Node.js, Express.js, MySQL, and JavaScript, implementing role-based authentication across three distinct user roles.</li>
+                  <li className="flex gap-3"><span className="material-symbols-outlined text-theme-accent-2 text-[16px]">chevron_right</span> Designed and integrated RESTful APIs spanning three modules&mdash;event management, club management, and lost-and-found&mdash;supporting CRUD operations, search, pagination, and server-side input validation.</li>
+                  <li className="flex gap-3"><span className="material-symbols-outlined text-theme-accent-2 text-[16px]">chevron_right</span> Built and optimized a multi-table MySQL schema with foreign key constraints and parameterized queries to enforce referential integrity across all application modules.</li>
+                  <li className="flex gap-3"><span className="material-symbols-outlined text-theme-accent-2 text-[16px]">chevron_right</span> Performed end-to-end API testing with Postman and managed source control using Git and GitHub throughout the development lifecycle.</li>
                 </ul>
               </div>
             </FadeUp>
