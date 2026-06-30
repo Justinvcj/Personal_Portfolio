@@ -391,9 +391,9 @@ function Projects() {
       title: "Equinox",
       tag: "Ride-Hailing Ecosystem",
       tech: ["Node.js", "WebSockets", "Supabase", "Flutter", "OSRM"],
-      desc: "Built to eliminate exorbitant API costs in ride-hailing by implementing a custom open-source routing engine. It solves the challenge of real-time location synchronization between drivers and riders with zero-latency dispatching.",
+      desc: "An Uber-like app built from scratch to show how to handle thousands of users without paying huge fees for maps. It seamlessly syncs the rider and driver's locations instantly.",
       icon: "local_taxi",
-      fullDesc: "Traditional ride-hailing platforms suffer from high operational costs due to third-party mapping APIs and struggle with real-time state synchronization. Equinox solves this by bringing routing in-house with a custom routing integration, completely bypassing paid APIs for ETAs and fare calculations. It also tackles the latency problem by maintaining a persistent, bidirectional connection between drivers and riders, ensuring instant dispatching and live location tracking without dropping connections.",
+      fullDesc: "Apps like Uber spend millions on mapping services just to calculate routes and fares. Equinox proves you can build a massive ride-hailing platform for free by using open-source maps. It flawlessly connects riders and drivers in real-time, instantly calculating trip costs and keeping track of moving cars without ever lagging or dropping the connection.",
       githubUrl: "https://github.com/Justinvcj/Equinox-EcoSystem"
     },
     {
@@ -401,9 +401,9 @@ function Projects() {
       title: "Developer Knowledge Engine",
       tag: "AI & Data Pipeline",
       tech: ["Python", "LLMs", "NetworkX", "SQLite", "GitHub API"],
-      desc: "Solves the problem of fragmented and linear developer documentation. It transforms scattered text files and web pages into a visual, interconnected web of concepts, making it effortless to discover relationships between APIs.",
+      desc: "An AI tool that reads thousands of pages of boring technical manuals and turns them into a beautiful, interactive visual map so developers can find answers instantly.",
       icon: "account_tree",
-      fullDesc: "Developers waste countless hours reading through disconnected, linear documentation pages trying to understand how different systems interact. The Developer Knowledge Engine solves this information overload by reading vast amounts of documentation and extracting the core technical entities. It connects the dots automatically, presenting the user with an interactive visual map. Instead of searching for keywords, developers can visually explore how libraries, APIs, and concepts relate to one another in an intuitive graph.",
+      fullDesc: "Software engineers waste countless hours reading endless pages of confusing manuals trying to figure out how different pieces of code fit together. This engine uses AI to read all those documents automatically. It then draws an interactive 'mind map' showing how every concept connects, turning hours of frustrating reading into seconds of simple visual exploration.",
       githubUrl: "https://github.com/Justinvcj/Developer-Knowledge-Engine"
     },
     {
@@ -411,9 +411,9 @@ function Projects() {
       title: "RepoRoast",
       tag: "AI Code Review System",
       tech: ["React", "Node.js", "TypeScript", "Gemini API"],
-      desc: "Automates the tedious and error-prone manual code review process. It instantly analyzes entire repositories to uncover hidden anti-patterns, security flaws, and performance bottlenecks before they reach production.",
+      desc: "An AI-powered assistant that acts like a senior programmer. It instantly reads through a team's code to spot hidden bugs and security risks before they go live.",
       icon: "bug_report",
-      fullDesc: "Manual code reviews are notoriously slow, subjective, and prone to human error, often allowing subtle security vulnerabilities or performance bottlenecks to slip into production codebases. RepoRoast solves this by acting as an instant, tireless senior engineer. It intelligently reads through entire GitHub repositories, understanding the full context of the codebase, and provides immediate, actionable feedback on bad practices and bugs, drastically reducing code review bottlenecks for development teams.",
+      fullDesc: "Checking other people's code for mistakes is slow and boring, and humans often miss subtle bugs that crash apps later. RepoRoast fixes this by acting as a tireless robotic engineer. It reads through entire codebases in seconds, understanding exactly what the code is trying to do, and points out security flaws and bad practices so teams can fix them immediately before users ever notice.",
       githubUrl: "https://github.com/Justinvcj/RepooRoast"
     },
     {
@@ -421,9 +421,9 @@ function Projects() {
       title: "Intent Pay",
       tag: "Expense Management App",
       tech: ["Kotlin", "Jetpack Compose", "Room DB"],
-      desc: "Tackles financial anxiety and impulse spending by acting as a psychological barrier. It automatically tracks expenses without manual entry and forces a 'cooldown' period before opening payment apps to encourage mindful spending.",
+      desc: "A smart finance app that automatically tracks your spending. To stop impulse buying, it intentionally pauses for 5 seconds every time you try to open a payment app to make you think twice.",
       icon: "account_balance_wallet",
-      fullDesc: "Managing personal finances usually fails because manual expense tracking is tedious, and digital payment apps make it too easy to spend money impulsively. Intent Pay solves both problems simultaneously. It removes the friction of tracking by automatically recording expenses from bank SMS alerts in the background. More importantly, it tackles the psychology of impulse buying by intercepting attempts to open payment apps and forcing a 'Reflection' cooldown period, giving the user a moment to reconsider unnecessary purchases.",
+      fullDesc: "Most people fail at budgeting because typing out every single purchase is annoying, and apps make it way too easy to spend money instantly with one tap. Intent Pay solves both problems. It quietly reads your bank text messages to track your expenses automatically. But its best trick is psychology: whenever you try to open a payment app, Intent Pay jumps in and forces you to wait 5 seconds, giving you a crucial moment to realize you don't actually need to buy that item.",
       githubUrl: "https://github.com/Justinvcj/Intent_Pay"
     }
   ];
