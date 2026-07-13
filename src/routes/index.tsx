@@ -147,12 +147,12 @@ function Navigation() {
   );
 }
 
-function GitHubWidget({ ghData }: { ghData: any }) {
+function GitHubWidget({ ghData, ghStats }: { ghData: any, ghStats: any }) {
   // Generate fake contribution grid for visuals
   const days = Array.from({ length: 119 }, () => Math.floor(Math.random() * 5));
   const colors = ["bg-surface-container-low/50", "bg-theme-mint/20", "bg-theme-mint/50", "bg-theme-mint/80", "bg-theme-mint"];
 
-  const commitsCount = "340";
+  const commitsCount = ghStats?.contributions || 340;
   
   return (
     <motion.div whileHover={{ y: -5, scale: 1.02 }} className="glass-card p-6 rounded-2xl border border-theme-border h-full flex flex-col justify-between hover:border-theme-mint/50 hover:shadow-[0_0_30px_color-mix(in_srgb,var(--theme-mint)_20%,transparent)] transition-all bg-theme-card backdrop-blur-md shadow-glass-extrusion relative overflow-hidden group">
@@ -227,7 +227,7 @@ function LeetCodeWidget({ lcData }: { lcData: any }) {
   );
 }
 
-function HeroDashboard({ ghData, lcData }: { ghData: any, lcData: any }) {
+function HeroDashboard({ ghData, lcData, ghStats }: { ghData: any, lcData: any, ghStats: any }) {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-32 pb-16 overflow-hidden">
       <div className="relative z-10 w-full max-w-container-max mx-auto px-gutter">
@@ -297,7 +297,7 @@ function HeroDashboard({ ghData, lcData }: { ghData: any, lcData: any }) {
         {/* Widgets Row below the hero */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="h-full">
-            <GitHubWidget ghData={ghData} />
+            <GitHubWidget ghData={ghData} ghStats={ghStats} />
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="h-full">
             <LeetCodeWidget lcData={lcData} />
@@ -773,6 +773,7 @@ function Portfolio() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [ghData, setGhData] = useState<any>(null);
   const [lcData, setLcData] = useState<any>(null);
+  const [ghStats, setGhStats] = useState<any>(null);
 
   useEffect(() => {
     // Ensure the page always starts at the top
@@ -783,10 +784,12 @@ function Portfolio() {
 
     Promise.all([
       fetch("https://api.github.com/users/Justinvcj").then(r => r.json()).catch(() => ({})),
-      fetch("https://alfa-leetcode-api.onrender.com/Justinvcj/solved").then(r => r.json()).catch(() => ({}))
-    ]).then(([gh, lc]) => {
+      fetch("https://alfa-leetcode-api.onrender.com/Justinvcj/solved").then(r => r.json()).catch(() => ({})),
+      fetch("/github-stats.json").then(r => r.json()).catch(() => ({ contributions: 340 }))
+    ]).then(([gh, lc, stats]) => {
       setGhData(gh);
       setLcData(lc);
+      setGhStats(stats);
       setIsLoaded(true);
     });
   }, []);
@@ -802,7 +805,7 @@ function Portfolio() {
         <Preloader isLoaded={isLoaded} />
         <Navigation />
         <main>
-          <HeroDashboard ghData={ghData} lcData={lcData} />
+          <HeroDashboard ghData={ghData} lcData={lcData} ghStats={ghStats} />
           <TechStack />
           <Projects />
           <Process />

@@ -1,0 +1,42 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs daily at midnight
+  workflow_dispatch: # Allows manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Total Contributions
+        run: |
+          # Fetch total contributions from GitHub GraphQL API
+          RESPONSE=$(curl -s -H "Authorization: bearer ${{ secrets.GITHUB_TOKEN }}" -X POST -d '{ "query": "query { user(login: \"Justinvcj\") { contributionsCollection { contributionCalendar { totalContributions } } } }" }' https://api.github.com/graphql)
+          
+          # Parse the total contributions using jq
+          TOTAL=$(echo $RESPONSE | jq '.data.user.contributionsCollection.contributionCalendar.totalContributions')
+          
+          # If total is null or empty, default to 340
+          if [ "$TOTAL" == "null" ] || [ -z "$TOTAL" ]; then
+            echo "Failed to fetch stats, using fallback."
+            TOTAL=340
+          fi
+          
+          # Create JSON file
+          mkdir -p public
+          echo "{\"contributions\": $TOTAL}" > public/github-stats.json
+          
+          cat public/github-stats.json
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated: Update GitHub contributions stats"
+          file_pattern: public/github-stats.json
