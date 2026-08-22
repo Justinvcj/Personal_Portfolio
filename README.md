@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # Personal Portfolio
 
@@ -10,31 +10,31 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Three.js](https://img.shields.io/badge/Three.js-000000?logo=threedotjs&logoColor=white)](https://threejs.org)
 
-[Report Bug](https://github.com/Justinvcj/Personal_Portfolio/issues) Â· [Request Feature](https://github.com/Justinvcj/Personal_Portfolio/issues)
+[Report Bug](https://github.com/Justinvcj/Personal_Portfolio/issues) * [Request Feature](https://github.com/Justinvcj/Personal_Portfolio/issues)
 
 </div>
 
 ---
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                    Personal Portfolio Client Experience                     â”‚
-â”‚                                                                             â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
-â”‚  â”‚ Grainient WebGL Shaderâ”‚  â”‚ Magnetic Button       â”‚  â”‚ PixelCard       â”‚  â”‚
-â”‚  â”‚ Three.js 3D Canvas    â”‚  â”‚ Spring Cursor Physics â”‚  â”‚ Retro Mesh FX   â”‚  â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
-â”‚             â”‚                          â”‚                        â”‚           â”‚
-â”‚             â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜           â”‚
-â”‚                                        â–¼                                    â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
-â”‚  â”‚ TanStack Start SSR Route Layer â€¢ Strict TypeScript â€¢ Radix Headless   â”‚  â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
-â”‚                                        â–¼                                    â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
-â”‚  â”‚  Live Project Hub â€¢ Interactive Tech Matrix â€¢ Contact Sonner System   â”‚  â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
++-----------------------------------------------------------------------------+
+|                    Personal Portfolio Client Experience                     |
+|                                                                             |
+|  +-----------------------+  +-----------------------+  +-----------------+  |
+|  | Grainient WebGL Shader|  | Magnetic Button       |  | PixelCard       |  |
+|  | Three.js 3D Canvas    |  | Spring Cursor Physics |  | Retro Mesh FX   |  |
+|  +----------+------------+  +----------+------------+  +--------+--------+  |
+|             |                          |                        |           |
+|             +--------------------------+------------------------+           |
+|                                        v                                    |
+|  +-----------------------------------------------------------------------+  |
+|  | TanStack Start SSR Route Layer * Strict TypeScript * Radix Headless   |  |
+|  +-------------------------------------+---------------------------------+  |
+|                                        v                                    |
+|  +-----------------------------------------------------------------------+  |
+|  |  Live Project Hub * Interactive Tech Matrix * Contact Sonner System   |  |
+|  +-----------------------------------------------------------------------+  |
++-----------------------------------------------------------------------------+
 ```
 
 > Most engineering portfolios rely on cookie-cutter site generators with heavy bloated templates and static assets, failing to demonstrate true architectural craftsmanship.
@@ -44,12 +44,12 @@
 
 ## Features
 
-- **Server-Side Rendered Routing** â€” Leverages TanStack Start and TanStack Router for instantaneous initial page loads and end-to-end type safety.
-- **Hardware-Accelerated 3D Visuals** â€” Features custom Three.js WebGL canvas shaders (`Grainient.tsx`) and interactive lighting effects.
-- **Physics-Driven Micro-Interactions** â€” Delivers fluid layout transitions, magnetic cursor-following buttons (`MagneticButton.tsx`), and scroll progress bars.
-- **Retro Component Architecture** â€” Custom UI components including glowing pixel cards (`PixelCard.tsx`), infinite marquee tickers, and spring reveal animations.
-- **Interactive Project Showcase** â€” Displays live repository metrics, categorized technology badges, and direct GitHub links.
-- **Accessible Design System** â€” Built on headless Radix UI primitives styled with Tailwind CSS v4 design tokens and dark-mode defaults.
+- **Server-Side Rendered Routing** -- Leverages TanStack Start and TanStack Router for instantaneous initial page loads and end-to-end type safety.
+- **Hardware-Accelerated 3D Visuals** -- Features custom Three.js WebGL canvas shaders (`Grainient.tsx`) and interactive lighting effects.
+- **Physics-Driven Micro-Interactions** -- Delivers fluid layout transitions, magnetic cursor-following buttons (`MagneticButton.tsx`), and scroll progress bars.
+- **Retro Component Architecture** -- Custom UI components including glowing pixel cards (`PixelCard.tsx`), infinite marquee tickers, and spring reveal animations.
+- **Interactive Project Showcase** -- Displays live repository metrics, categorized technology badges, and direct GitHub links.
+- **Accessible Design System** -- Built on headless Radix UI primitives styled with Tailwind CSS v4 design tokens and dark-mode defaults.
 
 ---
 
@@ -118,30 +118,18 @@ npm run preview
 
 ```text
 src/
-â”œâ”€â”€ components/
-â”‚   â”œâ”€â”€ ui/               # Radix UI primitives (Dialog, Button, Tooltip, Toggle)
-â”‚   â”œâ”€â”€ Grainient.tsx     # WebGL dynamic canvas gradient shader
-â”‚   â”œâ”€â”€ MagneticButton.tsx# Spring physics magnetic button
-â”‚   â”œâ”€â”€ PixelCard.tsx     # Retro interactive pixel card
-â”‚   â”œâ”€â”€ Projects.tsx      # Flagship project showcase
-â”‚   â”œâ”€â”€ Skills.tsx        # Interactive technical stack matrix
-â”‚   â”œâ”€â”€ HowIThink.tsx     # Engineering principles & mental models
-â”‚   â””â”€â”€ Contact.tsx       # Contact form with Sonner toasts
-â”œâ”€â”€ routes/               # TanStack Router type-safe file routes
-â””â”€â”€ router.tsx            # Router configuration & SSR hydration
+|-- components/
+|   |-- ui/               # Radix UI primitives (Dialog, Button, Tooltip, Toggle)
+|   |-- Grainient.tsx     # WebGL dynamic canvas gradient shader
+|   |-- MagneticButton.tsx# Spring physics magnetic button
+|   |-- PixelCard.tsx     # Retro interactive pixel card
+|   |-- Projects.tsx      # Flagship project showcase
+|   |-- Skills.tsx        # Interactive technical stack matrix
+|   |-- HowIThink.tsx     # Engineering principles & mental models
+|   `-- Contact.tsx       # Contact form with Sonner toasts
+|-- routes/               # TanStack Router type-safe file routes
+`-- router.tsx            # Router configuration & SSR hydration
 ```
-
----
-
-## Contributing
-
-Contributions, design suggestions, and feedback are welcome. Please open an issue first to discuss your ideas.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feat/PortfolioEnhancement`)
-3. Commit your Changes (`git commit -m 'feat: add interactive component'`)
-4. Push to the Branch (`git push origin feat/PortfolioEnhancement`)
-5. Open a Pull Request
 
 ---
 
